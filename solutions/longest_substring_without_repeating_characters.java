@@ -1,15 +1,15 @@
 import java.util.*;
 
 class Solution {
-    /*
-     * Approach/Algorithm: Sliding Window with LinkedHashSet
-     * - Uses a LinkedHashSet to maintain the current window of characters without duplicates
-     * - Expands the window by moving the right pointer and adding characters to the set
-     * - If a duplicate is found, removes characters from the left until the duplicate is removed
+    /**
+     * Approach: Sliding Window with LinkedHashSet
+     * - Uses a LinkedHashSet to maintain characters in the current window
+     * - Expands the window by moving the right pointer
+     * - Shrinks the window from the left when a duplicate is found
      * - Tracks the maximum length of the window without duplicates
      *
      * Time Complexity: O(n) - Each character is processed at most twice (once by right, once by left)
-     * Space Complexity: O(min(m, n)) - Where m is the character set size (ASCII: 128, Unicode: more)
+     * Space Complexity: O(min(m, n)) - Where m is the character set size (stores at most m characters)
      */
     public int lengthOfLongestSubstring(String s) {
         LinkedHashSet<Character> set = new LinkedHashSet<>();
