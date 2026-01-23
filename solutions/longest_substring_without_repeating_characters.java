@@ -6,10 +6,10 @@ class Solution {
      * - Uses a LinkedHashSet to maintain the current window of characters without duplicates
      * - Expands the window by moving the right pointer and adding characters to the set
      * - If a duplicate is found, removes characters from the left until the duplicate is removed
-     * - Tracks the maximum length of the window without duplicates
+     * - Tracks the maximum length of the window seen
      *
      * Time Complexity: O(n) - Each character is processed at most twice (once by right, once by left)
-     * Space Complexity: O(min(m, n)) - Where m is the character set size (stores at most m characters)
+     * Space Complexity: O(min(m, n)) - Where m is the character set size (ASCII: 128, Unicode: more)
      */
 
     public int lengthOfLongestSubstring(String s) {
