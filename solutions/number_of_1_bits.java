@@ -1,10 +1,10 @@
 /**
  * Approach/Algorithm:
  * The solution uses a bit manipulation approach to count the number of 1 bits in the integer.
- * It initializes an ArrayList to store bits (though not used in the final logic) and a variable to hold the input.
+ * It iterates through each bit of the number, checks if the bit is set (1), and increments the count accordingly.
  *
- * Time Complexity: O(1) - The operations are constant time since integers have a fixed size (32 bits).
- * Space Complexity: O(1) - The ArrayList is initialized but not used, so space is constant.
+ * Time Complexity: O(1) - The loop runs a fixed number of times (32 for 32-bit integers)
+ * Space Complexity: O(1) - Uses a constant amount of extra space
  */
 class Solution {
     public int hammingWeight(int n) {
