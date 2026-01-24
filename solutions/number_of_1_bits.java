@@ -11,5 +11,6 @@ class Solution {
         ArrayList<Integer> arr = new ArrayList<>();
 
         int var = n;
+
     }
 }
