@@ -1,14 +1,15 @@
 /**
  * Approach/Algorithm:
  * The solution uses a bit manipulation approach to count the number of 1 bits in the integer.
- * It iterates through each bit of the number, checks if the least significant bit is 1,
- * and then right-shifts the number to process the next bit.
+ * It initializes an ArrayList to store bits (though not used in the final logic) and a variable to hold the input.
  *
- * Time Complexity: O(1) - The loop runs a maximum of 32 times (for 32-bit integers)
- * Space Complexity: O(1) - Uses a constant amount of extra space
+ * Time Complexity: O(1) - The operations are constant time since integers have a fixed size (32 bits).
+ * Space Complexity: O(1) - The ArrayList is initialized but not used, so space is constant.
  */
 class Solution {
     public int hammingWeight(int n) {
         ArrayList<Integer> arr = new ArrayList<>();
+
+        int var = n;
     }
 }
