@@ -1,9 +1,7 @@
-    void helper(int[] candidates, int target, List<List<Integer>> arr,  List<Integer> res, int index, int sum)
-    {
-        if(sum == target)
-        {
-            arr.add(new ArrayList<>(res));
-            return;
-        }
+        int ans = candidates[index];
+        res.add(ans);
+        helper(candidates, target, arr, res, index + 1, sum + ans);
 
-        if (index == candidates.length) return;
+        res.remove(res.size() - 1);
+
+        helper(candidates, target, arr, res, index + 1, sum);
