@@ -5,5 +5,6 @@
             return;
         }
 
-        res.add(candidates[index]);
-        helper(candidates, target, arr, res, index + 1, si);
+        int ans = candidates[index]
+        res.add();
+        helper(candidates, target, arr, res, index + 1, sum + can);
