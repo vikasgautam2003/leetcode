@@ -1,5 +1,8 @@
-index)
+index, int sum)
     {
-        if(sum == tr)
+        if(sum == target)
+        {
+            arr.add(res)
+        }
     }
 }
