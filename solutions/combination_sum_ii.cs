@@ -1,9 +1,10 @@
-        if (i > index && candidates[i] == candidates[i - 1]) continue;
+class Solution {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        int size = candidates.length;
+        Arrays.sort(candidates);
+        List<List<Integer>> arr = new ArrayList<>();
+        List<Integer> res = new ArrayList<>();
+        helper(candidates, target, arr, res, 0, 0);
 
-        if (candidates[i] > target) break;
-
-        res.add(candidates[i]);
-
-        helper(candidates, target - candidates[i], arr, res, i + 1);
-
-        res.remove(res.size() - 1);
+        return arr;
+    }
