@@ -6,4 +6,4 @@
             return;
         }
 
-        int ans = candidates[index];
+        if (index == candidates.length) return;
