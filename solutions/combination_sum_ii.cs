@@ -1,4 +1,4 @@
-        res.remove()
+        res.remove(size() - 1);
 
     }
 }
