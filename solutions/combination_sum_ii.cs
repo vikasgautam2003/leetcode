@@ -5,5 +5,5 @@ class Solution {
         return helper(candidates, target, arr, new List<Integer> res);
     }
 
-    List<List<Integer>> helper(int[] c)
+    List<List<Integer>> helper(int[] candidates, int target, List<List<Integer>> arr, )
 }
