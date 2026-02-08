@@ -1,5 +1,5 @@
 index)
     {
-        if(candidates)
+        if(sum == tr)
     }
 }
