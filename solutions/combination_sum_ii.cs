@@ -1,4 +1,5 @@
+index)
     {
-        if()
+        if(candidates)
     }
 }
