@@ -4,7 +4,7 @@ class Solution {
         Arrays.sort(candidates);
         List<List<Integer>> arr = new ArrayList<>();
         List<Integer> res = new ArrayList<>();
-        helper(candidates, target, arr, res, 0, 0);
+        helper(candidates, target, arr, res, 0);
 
         return arr;
     }
